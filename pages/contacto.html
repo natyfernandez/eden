@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/Isotipo.png" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <title>EDEN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="contacto">
+  <header>
+    <nav>
+      <img class="logo" src="../assets/Imago_positivo.png" alt="Logo" />
+      <label for="menuBar">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input class="menuBar" type="checkbox" name="menuBar" id="menuBar">
+      <ul class="menu">
+        <li class="item"><a href="../index.html">Inicio</a></li>
+        <li class="item dropdown">
+          <a href="portfolio.html">Portfolio<i class="fa-solid fa-angle-down"></i><i class="fa-solid fa-angle-up"></i></a>
+          <ul class="dropdownMenu" aria-labelledby="navbarDropdownMenuLink">
+            <li class="dropdownItem"><a href="#">Web Design</a></li>
+            <li class="dropdownItem"><a href="#">Marketing</a></li>
+            <li class="dropdownItem"><a href="#">3D</a></li>
+          </ul>
+        </li>
+        <li class="item"><a href="nosotros.html">Nosotros</a></li>
+        <li class="item"><a href="experiencia.html">Experiencia</a></li>
+        <li class="button">
+          <button><a href="#">Contáctanos</a></button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="heroContacto">
+    <section class="heroSection">
+      <p class="textShadow">Contanos tu proyecto</p>
+      <h1 class="textShadow">Contáctanos</h1>
+      <p class="textShadow">Podes comunicarte con nosotros para solicitar presupuestos sin cargo o consultarnos tus inquietudes puntuales.
+      </p>
+    </section>
+    <div><i class="fa-solid fa-volume"></i></div>
+  </main>
+  <section class="sectionContacto">
+    <div class="formulario">
+      <article>
+        <div>
+          <h2>Contacto</h2>
+          <p>Estamos para ayudarte.</p>
+        </div>
+        <ul class="infoContacto">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <p>(+54)11 363-273</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <p>info@eden.com</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Buenos Aires, Argentina</p>
+          </li>
+        </ul>
+      </article>
+      <form action="">
+        <div class="datos">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+          </div>
+          <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+          </div>
+          <div>
+            <label for="email">Mail:</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="numero">Número:</label>
+            <input type="text" name="numero" id="numero" required>
+          </div>
+        </div>
+        <div class="asunto">
+          <h3>¿Asunto?</h3>
+          <div>
+            <input type="radio" name="unirme" id="unirme" required>
+            <label for="unirme">Quiero Unirme</label>
+            <input type="radio" name="unirme" id="unirme" required>
+            <label for="unirme">Contratanos</label>
+            <input type="radio" name="unirme" id="unirme" required>
+            <label for="unirme">Ayuda</label>
+            <input type="radio" name="unirme" id="unirme" required>
+            <label for="unirme">Otro</label>
+          </div>
+        </div>
+        <div class="mensaje">
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" cols="50" rows="1" placeholder="Escribí tu mensaje"></textarea>
+        </div>
+        <input class="enviar" type="submit" value="Enviar">
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footerTop">
+      <img class="logo" src="../assets/ImagotipoFooter.png" alt="logo">
+      <ul class="footerContacto">
+        <h4>Contacto</h4>
+        <li><i class="fa-solid fa-envelope"></i>
+          <p>info@eden.com</p>
+        </li>
+        <li><i class="fa-solid fa-phone"></i>
+          <p>(+54)11 363-273</p>
+        </li>
+      </ul>
+      <div class="direccion">
+        <h4>Dirección</h4>
+        <p>Buenos Aires, Argentina</p>
+      </div>
+      <form action="" method="" enctype="">
+        <h4>¡Enterate de nuestras novedades!</h4>
+        <div>
+          <label for="email"></label>
+          <input type="email" placeholder="Escribí tu mail acá..." name="email">
+          <input type="submit" value="Enviar">
+        </div>
+        <p>Si te subscribis estás aceptando nuestras políticas de privacidad.</p>
+      </form>
+    </div>
+    <hr>
+    <div class="footerBottom">
+      <p>©2024 EDEN, Todos los derechos reservados.</p>
+      <ul class="redes">
+        <li><a href="https://www.instagram.com/eden.davinci/"><i class="fa-brands fa-instagram"></a></i></li>
+        <li><a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
