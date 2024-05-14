@@ -1,1 +1,10 @@
-/**Codigo scss**/
+$azul1: rgba(19, 39, 63, 1);
+$azul2: rgba(28, 112, 156, 1);
+$azul3: rgba(57, 151, 187, 1);
+$azul4: rgba(124, 189, 209, 1);
+$azulOpacity60: rgba(19, 39, 63, 0.6);
+$celesteOpacity40: rgba(124, 189, 209, 0.4);
+$rosa: rgba(255, 221, 209, 1);
+
+@import "./base/reset"; 
+@import "./layouts/header.scss";

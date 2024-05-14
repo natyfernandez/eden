@@ -1,6 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ----- COLORES ----- */
+
+:root{
+    --azul-1: rgba(19, 39, 63, 1);
+    --azul-2: rgba(28, 112, 156, 1);
+    --azul-3: rgba(57, 151, 187, 1);
+    --azul-4: rgba(124, 189, 209, 1);
+    --azul-opacity60: rgba(19, 39, 63, 0.6);
+    --celeste-opacity40: rgba(124, 189, 209, 0.4);
+    --rosa-: rgba(255, 221, 209, 1);
+    --blanco: #ffffff ;
+    --negro: #000000;
+    --altura-header: 5.2rem;
+}
+
+.azul-1{
+    color: rgba(19, 39, 63, 1);
+} 
+.bg-azul-1{
+    background-color: rgba(19, 39, 63, 1);
+} 
+.bg-azul-2{
+    background-color: rgba(28, 112, 156, 1);
+} 
+.bg-azul-3{
+    background-color: rgba(57, 151, 187, 1);
+} 
+.bg-azul-4{
+    background-color: rgba(124, 189, 209, 1);
+} 
+.bg-azul-opacity60{
+    background-color: rgba(19, 39, 63, 0.6);
+} 
+.bg-celeste-opacity40{
+    background-color: rgba(124, 189, 209, 0.4);
+} 
+.bg-rosa{
+    background-color: rgba(255, 221, 209, 1);
+} 
 
 /* ----- GENERAL ----- */
 
+html{
+    color: white;
+    font-size: 16px;
+}
 section:not(.proyectos){
     padding: 2.5rem;
 }
@@ -68,6 +120,86 @@ nav .dropdown-item:hover{
     object-fit: cover;
     height: 100vh;
     z-index: -1;
+}
+
+/* ----- HEADER ----- */
+
+.logo{
+    width: 7.5rem;
+}
+header{
+    background-color: rgb(19, 39, 63, 0.95);
+    width: 100%;
+    height: var(--altura-header);
+    position: fixed;
+    top: 0;
+    padding: 0 2.5rem;
+    z-index: 2;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fa-bars:before{
+    display: none;
+}
+.menuBar{
+    display: none;
+}
+nav .item{
+    padding: 2rem 0;
+    display: inline;
+}
+nav .item:hover{
+    text-decoration: underline;
+}
+nav a:not(button a){
+    padding: 2rem 0;
+    text-decoration: none;
+    color: var(--blanco);
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.4rem;
+}
+nav .dropdownMenu{
+    display: none;
+    background-color:  rgb(19, 39, 63, 0.95);
+    position: absolute;
+    top: 5.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 10px 10px;
+    z-index: 99;
+}
+nav .dropdown:hover .dropdownMenu{
+    display: block;
+}
+nav .dropdownItem a{
+    display: block;
+    padding: 0.625rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+nav .dropdownItem a:hover{
+    padding: 0.625rem;
+    border: 1px solid white;
+}
+nav .fa-angle-down{
+    margin-left: 0.5rem;
+}
+nav .fa-angle-up{
+    display: none;
+}
+nav .dropdown:hover .fa-angle-up{
+    display: inline;
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+nav .dropdown:hover .fa-angle-down{
+    display: none;
 }
 
 /* ----- HEROS ----- */

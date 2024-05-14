@@ -1,1 +1,71 @@
-/**Codigo scss**/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
+
+html {
+  color: white;
+  font-size: 16px; }
+
+header {
+  background-color: blue;
+  width: 100%;
+  height: var(--altura-header);
+  position: fixed;
+  top: 0;
+  padding: 0 2.5rem;
+  z-index: 2; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    header nav .logo {
+      width: 7.5rem; }
+    header nav .fa-bars:before {
+      display: none; }
+    header nav .menuBar {
+      display: none; }
+    header nav a {
+      padding: 2rem 0;
+      text-decoration: none;
+      color: white; }
+    header nav .menu {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 1.4rem; }
+      header nav .menu .item {
+        padding: 2rem 0;
+        display: inline; }
+        header nav .menu .item:hover {
+          text-decoration: underline; }
+      header nav .menu .dropdown .dropdownMenu {
+        display: none;
+        background-color: blue;
+        position: absolute;
+        top: 5.2rem;
+        border: 1px solid pink;
+        border-radius: 0 0 10px 10px;
+        z-index: 99; }
+      header nav .menu .dropdown:hover .dropdownMenu {
+        display: block; }
+      header nav .menu .dropdown:hover .fa-angle-up {
+        display: inline;
+        margin-left: 0.5rem;
+        text-decoration: none; }
+      header nav .menu .dropdown:hover .fa-angle-down {
+        display: none; }
+      header nav .menu .dropdown li a {
+        display: block;
+        padding: 0.625rem;
+        border: 1px solid rgba(255, 255, 255, 0.5); }
+        header nav .menu .dropdown li a:hover {
+          padding: 0.625rem;
+          border: 1px solid white; }
+        header nav .menu .dropdown li a .fa-angle-down {
+          margin-left: 0.5rem; }
+        header nav .menu .dropdown li a .fa-angle-up {
+          display: none; }

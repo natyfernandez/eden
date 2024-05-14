@@ -1,0 +1,84 @@
+header{
+    background-color: blue;
+    width: 100%;
+    height: var(--altura-header);
+    position: fixed;
+    top: 0;
+    padding: 0 2.5rem;
+    z-index: 2;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .logo{
+            width: 7.5rem;
+        }
+        .fa-bars:before{
+            display: none;
+        }
+        .menuBar{
+            display: none;
+        }
+        
+        a:not(button a){
+            padding: 2rem 0;
+            text-decoration: none;
+            color: white;
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 1.4rem;
+            .item{
+                padding: 2rem 0;
+                display: inline;
+                &:hover{
+                text-decoration: underline;
+                }
+            }
+            .dropdown{
+                .dropdownMenu{
+                    display: none;
+                    background-color:  blue;
+                    position: absolute;
+                    top: 5.2rem;
+                    border: 1px solid pink;
+                    border-radius: 0 0 10px 10px;
+                    z-index: 99;
+                }
+                &:hover{
+                    .dropdownMenu{
+                    display: block;
+                    }  
+                    .fa-angle-up{
+                        display: inline;
+                        margin-left: 0.5rem;
+                        text-decoration: none;
+                    }
+                    .fa-angle-down{
+                        display: none;
+                    }
+                }           
+                li{
+                    a{
+                        display: block;
+                        padding: 0.625rem;
+                        border: 1px solid rgba(255, 255, 255, 0.5);
+                        &:hover{
+                        padding: 0.625rem;
+                        border: 1px solid white;
+                        }
+                        .fa-angle-down{
+                            margin-left: 0.5rem;
+                        }
+                        .fa-angle-up{
+                            display: none;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
