@@ -1,6 +1,6 @@
 footer{
-    background-color: var(--rosa-);
-    color: rgb(19, 39, 63);
+    background-color: $rosa;
+    color: $azul1;
     padding: 2rem 2.5rem;
     display: flex;
     flex-direction: column;
@@ -20,16 +20,14 @@ footer{
         }
     }
     .direccion, form{
-        display: flex;
-        flex-direction: column;
-        gap: 0.625rem;
+        @extend .footerContacto;
     }
     input{
         background-color: transparent;
-        color: var(--azul-1);    
+        color: $azul1;    
         padding: 0.5rem;
         border-radius: 0.625rem;
-        border: 0.0625rem solid var(--azul-1);
+        border: 0.0625rem solid $azul1;
     }
     .redes{
         display: flex;
@@ -38,7 +36,7 @@ footer{
         justify-content: space-between;
         a{
             text-decoration: none;
-            color: var(--azul-1);
+            color: $azul1;
         }
     }
 }

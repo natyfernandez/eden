@@ -9,10 +9,37 @@ html {
   color: white;
   font-size: 16px; }
 
+section:not(.proyectos) {
+  padding: 2.5rem; }
+
+.textShadow {
+  text-shadow: 0.25rem 0rem 0.6875rem black; }
+
+ul li {
+  list-style: none; }
+
+h1 {
+  font-size: 3.2rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4, p, a, input {
+  font-size: 1rem; }
+
+textarea {
+  resize: none;
+  min-height: 1.2rem;
+  max-height: 4rem;
+  width: 100%; }
+
 header {
-  background-color: blue;
+  background-color: #13273f;
   width: 100%;
-  height: var(--altura-header);
+  height: 5.2rem;
   position: fixed;
   top: 0;
   padding: 0 2.5rem;
@@ -28,10 +55,6 @@ header {
       display: none; }
     header nav .menuBar {
       display: none; }
-    header nav a {
-      padding: 2rem 0;
-      text-decoration: none;
-      color: white; }
     header nav .menu {
       display: flex;
       align-items: center;
@@ -42,9 +65,13 @@ header {
         display: inline; }
         header nav .menu .item:hover {
           text-decoration: underline; }
+        header nav .menu .item a {
+          padding: 2rem 0;
+          text-decoration: none;
+          color: white; }
       header nav .menu .dropdown .dropdownMenu {
         display: none;
-        background-color: blue;
+        background-color: #13273f;
         position: absolute;
         top: 5.2rem;
         border: 1px solid pink;
@@ -58,6 +85,10 @@ header {
         text-decoration: none; }
       header nav .menu .dropdown:hover .fa-angle-down {
         display: none; }
+      header nav .menu .dropdown .fa-angle-down {
+        margin-left: 0.5rem; }
+      header nav .menu .dropdown .fa-angle-up {
+        display: none; }
       header nav .menu .dropdown li a {
         display: block;
         padding: 0.625rem;
@@ -65,10 +96,6 @@ header {
         header nav .menu .dropdown li a:hover {
           padding: 0.625rem;
           border: 1px solid white; }
-        header nav .menu .dropdown li a .fa-angle-down {
-          margin-left: 0.5rem; }
-        header nav .menu .dropdown li a .fa-angle-up {
-          display: none; }
 
 h1 {
   text-transform: uppercase;
@@ -94,7 +121,7 @@ h1 {
     align-items: center;
     color: white; }
     .heroInicio section button {
-      background-color: var(--rosa-);
+      background-color: #ffddd1;
       padding: 0.9375rem 1.5625rem;
       border: none;
       border-radius: 3.125rem;
@@ -147,7 +174,7 @@ h1 {
   color: white; }
 
 footer {
-  background-color: var(--rosa-);
+  background-color: #ffddd1;
   color: #13273f;
   padding: 2rem 2.5rem;
   display: flex;
@@ -157,23 +184,19 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between; }
-  footer .footerContacto {
+  footer .footerContacto, footer .direccion, footer form {
     display: flex;
     flex-direction: column;
     gap: 0.625rem; }
-    footer .footerContacto li {
+    footer .footerContacto li, footer .direccion li, footer form li {
       display: flex;
       gap: 0.625rem; }
-  footer .direccion, footer form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem; }
   footer input {
     background-color: transparent;
-    color: var(--azul-1);
+    color: #13273f;
     padding: 0.5rem;
     border-radius: 0.625rem;
-    border: 0.0625rem solid var(--azul-1); }
+    border: 0.0625rem solid #13273f; }
   footer .redes {
     display: flex;
     width: 5rem;
@@ -181,4 +204,13 @@ footer {
     justify-content: space-between; }
     footer .redes a {
       text-decoration: none;
-      color: var(--azul-1); }
+      color: #13273f; }
+
+button {
+  background-color: #ffddd1;
+  padding: 0.3125rem 0.9375rem;
+  border: none;
+  border-radius: 3.125rem; }
+  button a {
+    color: #13273f;
+    text-decoration: none; }
