@@ -1,0 +1,45 @@
+footer{
+    background-color: var(--rosa-);
+    color: rgb(19, 39, 63);
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    .footerTop, .footerBottom{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footerContacto{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+        li{
+            display: flex;
+            gap: 0.625rem;
+        }
+    }
+    .direccion, form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+    input{
+        background-color: transparent;
+        color: var(--azul-1);    
+        padding: 0.5rem;
+        border-radius: 0.625rem;
+        border: 0.0625rem solid var(--azul-1);
+    }
+    .redes{
+        display: flex;
+        width: 5rem;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: var(--azul-1);
+        }
+    }
+}
+
