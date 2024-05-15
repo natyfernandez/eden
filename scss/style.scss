@@ -1,9 +1,20 @@
+/**Utilities**/
 @import "./utilities/variables";
 @import "./utilities/maps";
 @import "./utilities/mixims";
 
+/**Base**/
 @import "./base/reset"; 
+
+/**Layouts**/
 @import "./layouts/header.scss";
 @import "./layouts/main.scss";
 @import "./layouts/footer.scss";
-@import "./components/button"
+
+/**Components**/
+@import "./components/button";
+
+/**Media**/
+@import "./layouts/media/media1024";
+@import "./layouts/media/media768";
+@import "./layouts/media/media425";

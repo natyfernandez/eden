@@ -1,3 +1,5 @@
+/**Utilities**/
+/**Base**/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
@@ -36,6 +38,7 @@ textarea {
   max-height: 4rem;
   width: 100%; }
 
+/**Layouts**/
 header {
   background-color: #13273f;
   width: 100%;
@@ -46,8 +49,10 @@ header {
   z-index: 2; }
   header nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: none;
     flex-wrap: wrap; }
     header nav .logo {
       width: 7.5rem; }
@@ -57,8 +62,9 @@ header {
       display: none; }
     header nav .menu {
       display: flex;
-      align-items: center;
-      justify-content: end;
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
       gap: 1.4rem; }
       header nav .menu .item {
         padding: 2rem 0;
@@ -206,6 +212,7 @@ footer {
       text-decoration: none;
       color: #13273f; }
 
+/**Components**/
 button {
   background-color: #ffddd1;
   padding: 0.3125rem 0.9375rem;
@@ -214,3 +221,5 @@ button {
   button a {
     color: #13273f;
     text-decoration: none; }
+
+/**Media**/

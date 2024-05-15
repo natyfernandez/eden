@@ -1,0 +1,132 @@
+.cta{
+    background-color: var(--azul-1);
+    article{
+        display: flex;
+        justify-content: space-between;
+        div{
+            &:first-child{
+                width: 50%;
+                @include flex(column,center,start,1.25rem);
+                h3{
+                    color: var(--rosa-);
+                } 
+            }   
+            &:last-child{
+                width: 45%;
+                img{
+                    width: 100%;
+                    border-radius: 0.625rem;
+                }
+            }
+        }
+    }
+}
+
+.servicios{
+    @include flex(column,center,center,1.25rem);
+    background-image: linear-gradient(var(--azul-1), var(--azul-3));
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.625rem;
+        article{
+            background-color: var(--celeste-opacity40);
+            padding: 1.875rem;
+            @include flex(column,none,center,0.9375rem);
+            border-radius: 0.625rem;
+            i{
+                font-size: 4rem;
+            }
+            a{
+                color: var(--rosa-);
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 0.625rem;
+                i{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.proyectos{
+    background-color: var(--azul-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 2.5rem 0;
+    .carousel{
+        width: 100%;
+        .slider{
+            display: flex;
+            overflow: hidden;
+            gap: 0.625rem;
+            .slideTrack{
+                display: flex;
+                gap: 0.625rem;
+                animation: scroll 10s linear infinite;
+                img{
+                    height: 15.625rem;
+                    width: 15.625rem;
+                    object-fit: cover;
+                    border-radius: 0.625rem;
+                }
+            }
+        }
+        .secondSlider{
+            margin-top: 0.625rem;
+            .slideTrack{
+                animation: slider 10s linear infinite;
+            }
+        }
+        &:hover{
+            .slideTrack{
+                animation-play-state: paused;
+            }
+        }
+    }
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes slider{
+    from{
+        transform: translateX(-9%);
+    }
+    to{
+        transform: translateX(-109%);
+    }
+}
+
+.sectionExperiencia{
+    background-image: linear-gradient(var(--azul-3), var(--azul-1));
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+        video{
+            width: 100%;
+        }
+    }
+}
+
+.presupuesto{
+    background-color: var(--azul-1);
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+    }
+}
