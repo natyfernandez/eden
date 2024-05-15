@@ -212,6 +212,118 @@ footer {
       text-decoration: none;
       color: #13273f; }
 
+.cta {
+  background-color: var(--azul-1); }
+  .cta article {
+    display: flex;
+    justify-content: space-between; }
+    .cta article div:first-child {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 1.25rem; }
+      .cta article div:first-child h3 {
+        color: var(--rosa-); }
+    .cta article div:last-child {
+      width: 45%; }
+      .cta article div:last-child img {
+        width: 100%;
+        border-radius: 0.625rem; }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  background-image: linear-gradient(var(--azul-1), var(--azul-3)); }
+  .servicios .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem; }
+    .servicios .cards article {
+      background-color: var(--celeste-opacity40);
+      padding: 1.875rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: none;
+      align-items: center;
+      gap: 0.9375rem;
+      border-radius: 0.625rem; }
+      .servicios .cards article i {
+        font-size: 4rem; }
+      .servicios .cards article a {
+        color: var(--rosa-);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem; }
+        .servicios .cards article a i {
+          font-size: 1rem; }
+
+.proyectos {
+  background-color: var(--azul-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.5rem 0; }
+  .proyectos .carousel {
+    width: 100%; }
+    .proyectos .carousel .slider {
+      display: flex;
+      overflow: hidden;
+      gap: 0.625rem; }
+      .proyectos .carousel .slider .slideTrack {
+        display: flex;
+        gap: 0.625rem;
+        animation: scroll 10s linear infinite; }
+        .proyectos .carousel .slider .slideTrack img {
+          height: 15.625rem;
+          width: 15.625rem;
+          object-fit: cover;
+          border-radius: 0.625rem; }
+    .proyectos .carousel .secondSlider {
+      margin-top: 0.625rem; }
+      .proyectos .carousel .secondSlider .slideTrack {
+        animation: slider 10s linear infinite; }
+    .proyectos .carousel:hover .slideTrack {
+      animation-play-state: paused; }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-100%); } }
+
+@keyframes slider {
+  from {
+    transform: translateX(-9%); }
+  to {
+    transform: translateX(-109%); } }
+
+.sectionExperiencia {
+  background-image: linear-gradient(var(--azul-3), var(--azul-1)); }
+  .sectionExperiencia article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem; }
+    .sectionExperiencia article video {
+      width: 100%; }
+
+.presupuesto {
+  background-color: var(--azul-1); }
+  .presupuesto article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem; }
+
 /**Components**/
 button {
   background-color: #ffddd1;
