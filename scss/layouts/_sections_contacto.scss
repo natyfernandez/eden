@@ -1,0 +1,94 @@
+.sectionContacto{
+    background-color: $azul1;
+}
+.formulario{
+    background-color: $celesteOpacity40;
+    display: flex;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    article{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem;
+        background-color: $azul1;
+        border-radius: 0.625rem;
+        .infoContacto{
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            li{
+                display: flex;
+                gap: 0.625rem;
+            }
+        }
+    }
+    form{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem;
+        .datos{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 0.625rem;
+            }
+            input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+                color: $rosa;
+                &:focus-visible{
+                    outline: none;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+                }
+            }
+        }
+        .asunto{
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+                color: $rosa;
+                &:focus-visible{
+                    outline: none;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+                }
+            }
+        }
+        .mensaje{
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            textarea{
+                background-color: transparent;
+                border: none;
+                border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+                color: $rosa;
+                &:focus-visible{
+                    outline: none;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+                }
+            }
+            ::-webkit-input-placeholder{
+                color: rgba(255, 255, 255, 0.45);
+            }
+        }
+    }
+
+}

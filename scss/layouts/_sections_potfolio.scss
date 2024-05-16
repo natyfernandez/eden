@@ -1,0 +1,50 @@
+.trabajos{
+    background-image: linear-gradient($azul1, $azul3);
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        .gallery{
+            background-color: $azulOpacity60;
+            border-radius: 0.625rem;
+            width: 100%;
+            padding: 2rem;
+            .buttons{
+                margin-bottom: 1.25rem;
+                display: grid;
+                gap: 0.625rem;
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                align-items: center;
+                input{
+                    display: none;
+                }
+                label{
+                    min-width: 8.1875rem;
+                    width: 100%;
+                    padding: 0.625rem;
+                    text-align: center;
+                    border-radius: 0.625rem;
+                    background-color: $azul1;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $celesteOpacity40;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .photos{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                grid-auto-rows: 300px;
+                gap: 0.625rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0.625rem;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

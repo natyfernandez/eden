@@ -213,7 +213,7 @@ footer {
       color: #13273f; }
 
 .cta {
-  background-color: var(--azul-1); }
+  background-color: #13273f; }
   .cta article {
     display: flex;
     justify-content: space-between; }
@@ -225,7 +225,7 @@ footer {
       align-items: start;
       gap: 1.25rem; }
       .cta article div:first-child h3 {
-        color: var(--rosa-); }
+        color: #ffddd1; }
     .cta article div:last-child {
       width: 45%; }
       .cta article div:last-child img {
@@ -238,13 +238,13 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1.25rem;
-  background-image: linear-gradient(var(--azul-1), var(--azul-3)); }
+  background-image: linear-gradient(#13273f, #3997bb); }
   .servicios .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.625rem; }
     .servicios .cards article {
-      background-color: var(--celeste-opacity40);
+      background-color: rgba(124, 189, 209, 0.4);
       padding: 1.875rem;
       display: flex;
       flex-direction: column;
@@ -255,7 +255,7 @@ footer {
       .servicios .cards article i {
         font-size: 4rem; }
       .servicios .cards article a {
-        color: var(--rosa-);
+        color: #ffddd1;
         text-decoration: none;
         display: flex;
         align-items: center;
@@ -264,7 +264,7 @@ footer {
           font-size: 1rem; }
 
 .proyectos {
-  background-color: var(--azul-3);
+  background-color: #3997bb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,7 +305,7 @@ footer {
     transform: translateX(-109%); } }
 
 .sectionExperiencia {
-  background-image: linear-gradient(var(--azul-3), var(--azul-1)); }
+  background-image: linear-gradient(#3997bb, #13273f); }
   .sectionExperiencia article {
     display: flex;
     flex-direction: column;
@@ -316,13 +316,167 @@ footer {
       width: 100%; }
 
 .presupuesto {
-  background-color: var(--azul-1); }
+  background-color: #13273f; }
   .presupuesto article {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1.25rem; }
+
+.trabajos {
+  background-image: linear-gradient(#13273f, #3997bb); }
+  .trabajos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; }
+    .trabajos article .gallery {
+      background-color: rgba(19, 39, 63, 0.6);
+      border-radius: 0.625rem;
+      width: 100%;
+      padding: 2rem; }
+      .trabajos article .gallery .buttons {
+        margin-bottom: 1.25rem;
+        display: grid;
+        gap: 0.625rem;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        align-items: center; }
+        .trabajos article .gallery .buttons input {
+          display: none; }
+        .trabajos article .gallery .buttons label {
+          min-width: 8.1875rem;
+          width: 100%;
+          padding: 0.625rem;
+          text-align: center;
+          border-radius: 0.625rem;
+          background-color: #13273f;
+          cursor: pointer; }
+          .trabajos article .gallery .buttons label:hover {
+            background-color: rgba(124, 189, 209, 0.4);
+            color: #ffffff; }
+      .trabajos article .gallery .photos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-auto-rows: 300px;
+        gap: 0.625rem; }
+        .trabajos article .gallery .photos img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.625rem;
+          object-fit: cover; }
+
+.bienvenidos {
+  background-color: #13273f; }
+  .bienvenidos h2 {
+    margin-bottom: 1rem; }
+
+.eden {
+  background-image: linear-gradient(#13273f, #3997bb);
+  display: flex;
+  gap: 2rem; }
+  .eden article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .eden img {
+    width: 45%;
+    height: 30vw;
+    border-radius: 0.625rem; }
+
+.comencemos {
+  background-image: linear-gradient(#3997bb, #13273f); }
+  .comencemos ol {
+    margin-top: 1rem;
+    margin-left: 1.2rem; }
+
+.estasListo {
+  background-color: #13273f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; }
+  .estasListo img {
+    width: 100%;
+    max-width: 62.5rem; }
+
+.sectionContacto {
+  background-color: #13273f; }
+
+.formulario {
+  background-color: rgba(124, 189, 209, 0.4);
+  display: flex;
+  border-radius: 0.625rem;
+  padding: 0.625rem; }
+  .formulario article {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    background-color: #13273f;
+    border-radius: 0.625rem; }
+    .formulario article .infoContacto {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem; }
+      .formulario article .infoContacto li {
+        display: flex;
+        gap: 0.625rem; }
+  .formulario form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem; }
+    .formulario form .datos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem; }
+      .formulario form .datos div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem; }
+      .formulario form .datos input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+        color: #ffddd1; }
+        .formulario form .datos input:focus-visible {
+          outline: none;
+          background-color: transparent;
+          border: none;
+          border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45); }
+    .formulario form .asunto {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem; }
+      .formulario form .asunto input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+        color: #ffddd1; }
+        .formulario form .asunto input:focus-visible {
+          outline: none;
+          background-color: transparent;
+          border: none;
+          border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45); }
+    .formulario form .mensaje {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem; }
+      .formulario form .mensaje textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45);
+        color: #ffddd1; }
+        .formulario form .mensaje textarea:focus-visible {
+          outline: none;
+          background-color: transparent;
+          border: none;
+          border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45); }
+      .formulario form .mensaje ::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.45); }
 
 /**Components**/
 button {
