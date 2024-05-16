@@ -1,0 +1,91 @@
+.adn{
+    background-color: $azul1;
+    article{
+        display: flex;
+        justify-content: space-between;
+        div{
+            &:first-child{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1.25rem;
+                align-items: start;
+            }
+            &:last-child{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 45%;
+                height: 18.75rem;
+                background-color: #ffffff;
+                border-radius: 0.625rem;
+                img{
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+.mision{
+    background-image: linear-gradient($azul1, $azul3);
+    display: flex;
+    gap: 0.625rem;
+    flex-direction: column;
+    align-items: center;
+    .cards{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        align-items: center;
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $azulOpacity60;
+            height: 100%;
+            gap: 0.625rem;
+            padding: 1.5rem;
+            border-radius: 0.625rem;
+            img{
+                width: 50%;
+                margin-bottom: 0.625rem;
+            }
+        }
+    }
+}
+
+.equipo{
+    background-image: linear-gradient($azul3, $azul1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    align-items: center;
+    .cardsEquipo{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        align-items: center;
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $celesteOpacity40;
+            height: 100%;
+            border-radius: 0.625rem;
+            padding-bottom: 10px;
+            img{    
+                margin-bottom: 0.625rem;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 0.625rem;
+                border-top-right-radius: 0.625rem;
+            }
+            h3{
+                margin-bottom: 0.625rem;
+            }
+        }
+    }
+}

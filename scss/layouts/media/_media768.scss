@@ -1,0 +1,163 @@
+@media (max-width: 767px) {
+    header{
+        height: 5.2rem;
+        padding: 0;
+        nav{
+            position: relative;
+            .logo{
+                margin: 0 2rem;
+            }
+            .fa-bars{
+                padding: 2rem;
+                cursor: pointer;
+                &:before{
+                    display: block;
+                    font-size: 1.3rem;
+                }
+            }
+            .menuBar{
+                &:checked + .menu{
+                    display: flex;
+                }
+            }
+            .menu{
+                display: none;
+                position: absolute;
+                top: 5.2rem;
+                background-color: rgba(19, 39, 63, 0.95);
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                gap: 0;
+                .dropdownMenu{
+                    position: relative;
+                    width: 100%;
+                    top: 1rem;
+                    border: none;
+                    border-radius: 0;
+                    box-shadow: inset 0px 0px 5px 0px white;
+                    background-color: rgba(19, 39, 63, 0.885);
+                    .dropdownItem{  
+                        a{
+                            border-bottom: none;
+                            border-left: none;
+                            border-right: none;
+                        }
+                    } 
+                }
+                .item, .button{
+                    width: 100%;
+                    padding: 0;
+                    border-top: 1px solid rgba(255, 255, 255, 0.5);;
+                }
+                a, button{
+                    display: block;
+                    width: 100%;
+                    padding: 1rem;
+                }
+                button{
+                    background-color: rgba(255, 255, 255, 0);
+                    padding: 0;
+                    border: none;
+                    border-radius: 0;
+                    a{
+                        color: white;
+                    }
+                }
+            }   
+        }
+    }
+
+    section:not(.proyectos){
+        padding: 1.8rem;
+    }
+
+    .heroInicio .heroSection{
+        padding: 0;
+    }
+
+    .servicios{
+        align-items: start;
+        text-align: start;
+        .cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .cta{
+        article{
+            flex-direction: column;
+            gap: 1.8rem;
+            div{
+                &:first-child {
+                    width: 100%;
+                }
+                &:last-child{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .proyectos{
+        align-items: start;
+    }
+
+
+    .sectionExperiencia{
+        article{
+            align-items: start;
+            text-align: start;
+        } 
+    }
+
+    .presupuesto{
+        article{
+            align-items: start;
+            text-align: start;
+        }
+    } 
+
+    .contacto{
+        .formulario{
+            flex-direction: column;
+            article{
+                width: 100%;
+                flex-direction: row;
+                div{
+                    width: 50%;
+                }
+                .infoContacto{
+                    width: 50%;
+                }
+            }
+            form{
+                width: 100%;
+            }
+        }
+    } 
+
+    footer{
+        .footerTop{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            form{
+                div{
+                    width: 100%;
+                    text-align: center;
+                }   
+                .email{
+                    width: 70%;
+                }
+                .enviar{
+                    width: 17%;
+                }         
+            } 
+        }
+        .footerContacto, .direccion, footer form {
+            align-items: center;
+        }
+    }
+}

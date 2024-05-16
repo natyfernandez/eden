@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    html{
+        font-size: 14px;
+    }
+    .heroSection{
+        padding: 0;
+    }
+    footer{
+        .footerTop{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 2rem;
+            form {
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                .email{
+                    width: 89%;
+                }
+                .enviar{
+                    width: 10%;
+                }
+            }
+        }
+    } 
+}

@@ -19,7 +19,7 @@ header{
             display: none;
         }
         .menu{
-            @include flex(row, center, end, 1.4rem);
+            @include flex(row, center, center, 1.4rem);
             .item{
                 padding: 2rem 0;
                 display: inline;
