@@ -16,7 +16,7 @@ main{
         position: absolute;
         bottom: 5vh;
         left: 48vw;
-        -webkit-animation: bounce 800ms 3 ease;
+        animation: bounce 800ms 3 ease;
         color: white;
         text-decoration: none;
         &:visited{

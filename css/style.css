@@ -124,7 +124,7 @@ main .scroll {
   position: absolute;
   bottom: 5vh;
   left: 48vw;
-  -webkit-animation: bounce 800ms 3 ease;
+  animation: bounce 800ms 3 ease;
   color: white;
   text-decoration: none; }
   main .scroll:visited {
@@ -598,6 +598,13 @@ footer {
           border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45); }
       .formulario form .mensaje ::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.45); }
+
+.anchor-offset {
+  position: relative;
+  padding-top: 83px !important; }
+
+section:last-of-type {
+  padding-bottom: 83px !important; }
 
 /**Components**/
 button {
