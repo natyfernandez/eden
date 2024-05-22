@@ -1,16 +1,68 @@
-h1{
-    text-transform: uppercase;
-    margin: 1.25rem 0;
-    text-align: center;
-    i{
-        height: 3rem;
-        display: inline;
-        color: #ffffff00;
-        background: url(../assets/calma.png) no-repeat center;
-        background-size: contain;
+main{
+    h1{
+        text-transform: uppercase;
+        margin: 1.25rem 0;
+        text-align: center;
+        i{
+            height: 3rem;
+            display: inline;
+            color: #ffffff00;
+            background: url(../assets/calma.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+    .scroll{
+        @include flex(column,space-between, center, none);
+        position: absolute;
+        bottom: 5vh;
+        left: 48vw;
+        -webkit-animation: bounce 800ms 3 ease;
+        color: white;
+        text-decoration: none;
+        &:visited{
+            color: white;
+        }
+        .fa-chevron-down{
+            display: flex;
+            align-items: center;
+            height: 1.2rem;
+            font-size: 3rem;
+            &:first-of-type{
+                opacity: 33%;
+                font-size: 2rem;
+            }
+            &:nth-of-type(2){
+                opacity: 66%;
+                font-size: 3rem;
+            }
+            &:last-of-type{
+                font-size: 4rem;
+            }
+        }
     }
 }
-
+@keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateY(-30px);
+    }
+    30% {
+      transform: translateY(15px);
+    }
+    45% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(9px);
+    }
+    75% {
+      transform: translateY(-6px);
+    }
+  }
 .heroInicio{
     background: url(../assets/HeroInicio.png) no-repeat center;
     background-size: cover;
@@ -54,7 +106,7 @@ h1{
             padding-left: 0.9375rem;
         }
     }
-}
+}  
 .heroPortfolio, .heroNosotros{
     padding: 2.5rem;
     height: 100vh;
