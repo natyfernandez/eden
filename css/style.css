@@ -12,9 +12,6 @@ html {
   font-size: 16px;
   scroll-behavior: smooth; }
 
-section:not(.proyectos) {
-  padding: 2.5rem; }
-
 .textShadow {
   text-shadow: 0.25rem 0rem 0.6875rem black; }
 
@@ -601,6 +598,9 @@ footer {
           border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.45); }
       .formulario form .mensaje ::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.45); }
+
+section:not(.proyectos) {
+  padding: 2.5rem; }
 
 .anchor-offset {
   padding-top: 83px !important; }
