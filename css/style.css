@@ -603,10 +603,10 @@ footer {
         color: rgba(255, 255, 255, 0.45); }
 
 .anchor-offset {
-  padding-top: 83px !important; }
+  padding-top: 83px; }
 
-section:last-of-type {
-  padding-bottom: 83px !important; }
+.anchor-offset-bottom {
+  padding-bottom: 83px; }
 
 /**Components**/
 button {
@@ -624,6 +624,8 @@ button {
     font-size: 14px; }
   .heroSection {
     padding: 0; }
+  main div p {
+    display: none; }
   .mision .cards {
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
   footer .footerTop {

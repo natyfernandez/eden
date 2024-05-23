@@ -5,6 +5,13 @@
     .heroSection{
         padding: 0;
     }
+    main{
+        div{
+            p{
+                display: none;
+            }
+        }
+    }
     .mision{
         .cards{
             grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
