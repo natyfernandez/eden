@@ -14,8 +14,10 @@ main{
     .scroll{
         @include flex(column,space-between, center, none);
         position: absolute;
-        bottom: 5vh;
-        left: 48vw;
+        width: 56px;
+        bottom: 6vh;
+        left: 50%;
+        transform: translateX(-50%);
         animation: bounce 800ms 3 ease;
         color: white;
         text-decoration: none;
@@ -44,23 +46,22 @@ main{
 @keyframes bounce {
     0%,
     100% {
-      transform: translateY(0);
-      transform-origin: 50% 50%;
+      transform: translate(-50%, 0);
     }
     15% {
-      transform: translateY(-30px);
+      transform: translate(-50%,-30px);
     }
     30% {
-      transform: translateY(15px);
+      transform: translate(-50%,15px);
     }
     45% {
-      transform: translateY(-15px);
+      transform: translate(-50%,-15px);
     }
     60% {
-      transform: translateY(9px);
+      transform: translate(-50%,9px);
     }
     75% {
-      transform: translateY(-6px);
+      transform: translate(-50%,-6px);
     }
   }
 .heroInicio{

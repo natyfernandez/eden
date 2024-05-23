@@ -5,6 +5,11 @@
     .heroSection{
         padding: 0;
     }
+    .mision{
+        .cards{
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        }
+    }
     footer{
         .footerTop{
             display: grid;
